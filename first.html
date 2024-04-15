@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="first.css">
+    <link href="login.html">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="title">Task Manager</div>
+    <div class="filter">
+    <label for="taskFilter">Filter by Task:</label>
+    <select id="taskFilter">
+        <option value="all">All</option>
+        <option value="meeting">Meeting</option>
+        <option value="project">Project</option>
+        <option value="personal break">Personal Break</option>
+    </select>
+    </div>
+    <br><br>
+
+    <div class="try">
+
+    
+    <div class="task">
+    <label for="taskInput">Task:</label>
+    <input type="text" id="taskInput">
+    <label for="descriptionInput">Description:</label>
+    <input type="text" id="descriptionInput">
+
+    <button id="addButton">Add</button>
+    <button id="updateButton">Update</button>
+    </div>
+    
+    <br><br>
+    <div class="stopclock"> Stopclock
+        <div id="display">00:00:00</div>
+        <button id="startStopBtn" onclick="startStop()">Start</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+</div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Description</th>
+                <th>Duration</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            
+        </tbody>
+    </table>
+        
+    
+    <script src="first.js"></script>
+</body>
+</html>
